@@ -47,4 +47,10 @@ git pull origin master
 echo 
 cd ../SdFat
 git pull origin master
+echo 
+cd ../SALT_logging
+git pull origin master
+cd ../..
+pwd
+echo 
 echo DONE but check for errors
