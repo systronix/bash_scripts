@@ -11,14 +11,28 @@ echo
 cd ../NAP-SALT2-TEST
 git pull origin master
 echo 
+cd ../../napserver_2017
+pwd
+git pull origin master
+echo 
+cd ../Arduino/libraries
+pwd
+echo 
 echo Now library repos
-cd ../libraries/SALT_menu/
+pwd
+cd SALT_FETs/
+git pull origin master
+echo 
+cd ../SALT_menu/
 git pull origin master
 echo 
 cd ../Systronix_MB85RC256V
 git pull origin master
 echo 
 cd ../NAP_pod_load_defs
+git pull origin master
+echo 
+cd ../SALT_drawer_locks
 git pull origin master
 echo 
 cd ../SALT_drawer_locks
@@ -45,11 +59,34 @@ echo
 cd ../Systronix_TMP102
 git pull origin master
 echo 
+cd ../Systronix_TMP275
+git pull origin master
+echo
 cd ../SdFat
 git pull origin master
 echo 
 cd ../SALT_logging
 git pull origin master
+echo
+cd ../Systronix_LCM300
+git pull origin master
+echo
+cd ../TeensyID
+git pull origin master
+echo
+cd ../Ethernet2
+git pull origin master
+echo
+cd ../TeensyMAC
+git pull origin master
+echo
+cd ../T3Mac
+git pull origin master
+echo
+cd ../EmonLib
+git pull origin master
+echo
+echo Back to the script folder
 cd ../..
 pwd
 echo 
