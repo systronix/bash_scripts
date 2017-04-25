@@ -11,16 +11,21 @@ echo
 cd ../NAP-SALT2-TEST
 git pull origin master
 echo 
-cd ../../napserver_2017
+echo 
+cd ../W5500_test/
 pwd
 git pull origin master
 echo 
-cd ../Arduino/libraries
+cd ../WIZ820io_Test/
 pwd
-echo 
+git pull origin master
+echo
 echo Now library repos
+cd ../libraries
 pwd
+echo descend into first library
 cd SALT_FETs/
+pwd
 git pull origin master
 echo 
 cd ../SALT_menu/
