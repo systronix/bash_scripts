@@ -49,7 +49,6 @@ cd ../Systronix_MB85RC256V
 pwd
 git pull origin master
 echo 
-pwd
 cd ../NAP_pod_load_defs
 pwd
 git pull origin master
@@ -84,7 +83,7 @@ git pull origin master
 echo 
 cd ../Systronix_PCA9557
 pwd
-git pull origin master
+git pull origin --all
 echo 
 cd ../Systronix_TMP102
 pwd
@@ -104,7 +103,7 @@ git pull origin master
 echo
 cd ../Systronix_LCM300
 pwd
-git pull origin master
+git pull --all
 echo
 cd ../Ethernet2
 pwd
