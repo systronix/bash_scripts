@@ -124,10 +124,10 @@ echo
 cd ../TeensyID
 pwd
 git pull origin master
-echo
-cd ../EmonLib
-pwd
-git pull origin master
+# echo
+# cd ../EmonLib
+# pwd
+# git pull origin master
 echo
 echo Back to the script folder
 cd ../..
