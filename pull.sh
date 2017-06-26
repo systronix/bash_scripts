@@ -83,7 +83,7 @@ git pull origin master
 echo 
 cd ../Systronix_PCA9557
 pwd
-git pull origin --all
+git pull --all
 echo 
 cd ../Systronix_TMP102
 pwd
@@ -104,6 +104,9 @@ echo
 cd ../Systronix_LCM300
 pwd
 git pull --all
+echo
+cd ../SALT_power_FRU
+git pull origin master
 echo
 cd ../Ethernet2
 pwd
