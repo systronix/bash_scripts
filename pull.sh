@@ -127,10 +127,10 @@ echo
 cd ../TeensyID
 pwd
 git pull origin master
-echo
-cd ../EmonLib
-pwd
-git pull origin master
+# echo
+# cd ../EmonLib
+# pwd
+# git pull origin master
 echo
 cd ../Systronix_NTP
 pwd
