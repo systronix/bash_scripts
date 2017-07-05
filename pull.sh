@@ -132,6 +132,10 @@ cd ../EmonLib
 pwd
 git pull origin master
 echo
+cd ../Systronix_NTP
+pwd
+git pull origin master
+echo
 echo Back to the script folder
 cd ../..
 pwd
