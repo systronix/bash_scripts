@@ -85,6 +85,10 @@ cd ../Systronix_PCA9557
 pwd
 git pull --all
 echo 
+cd ../Systronix_PCA9548A
+pwd
+git pull --all
+echo 
 cd ../Systronix_TMP102
 pwd
 git pull origin master
