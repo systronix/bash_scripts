@@ -136,6 +136,10 @@ cd ../Systronix_NTP
 pwd
 git pull origin master
 echo
+cd ../SALT_ext_sensors
+pwd
+git pull origin master
+echo
 echo Back to the script folder
 cd ../..
 pwd
