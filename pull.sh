@@ -116,7 +116,6 @@ git checkout SALT2_PowerDist1
 git pull origin SALT2_PowerDist1
 git checkout SALT2v1_PowerDist2v0
 git pull origin SALT2v1_PowerDist2v0
-git pull --all
 echo
 cd ../SALT_power_FRU
 git pull origin master
