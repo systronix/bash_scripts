@@ -21,6 +21,10 @@ cd XPT2046_Touchscreen
 pwd
 git pull origin master
 echo 
+cd ../SPI
+pwd
+git pull origin master
+echo
 cd ../ILI9341_t3/
 pwd
 git pull origin master
@@ -50,10 +54,6 @@ pwd
 git pull origin master
 echo 
 cd ../NAP_pod_load_defs
-pwd
-git pull origin master
-echo 
-cd ../SALT_drawer_locks
 pwd
 git pull origin master
 echo 
