@@ -18,21 +18,24 @@ echo Now library repos
 cd ../libraries
 pwd
 cd XPT2046_Touchscreen
+echo "XPT2046 touchscreen from PRJC"
 pwd
 git pull origin master
 echo 
 cd ../SPI
+echo "PJRC SPI optimized for Teensy"
 pwd
 git pull origin master
 echo
 cd ../ILI9341_t3/
+echo "PRJC ILI9341 touchscreen optimized for Teensy"
 pwd
 git pull origin master
 echo 
 cd ../ILI9341_fonts
 pwd
 git pull origin master
-echo 
+echo "I2C_T3 with systronix mods for exception handling"
 cd ../i2c_t3
 pwd
 git pull origin master
@@ -109,33 +112,38 @@ pwd
 git pull origin master
 echo
 cd ../Systronix_LCM300
+echo "This is just the LCM300 lib with branches to support various SALT and Power Dist hardware..."
+echo "... which have different I/O and pin mappings"
 pwd
+echo "The master branch"
 git checkout master
 git pull origin master
+echo "For old SALT 2.0 which we are not currently using anymore."
 git checkout SALT2_PowerDist1
 git pull origin SALT2_PowerDist1
+echo "Latest hardware including SALT 2.2 and PD 2.2, as well as older SALT 2.1 with 2.2 ECOs and PowerDist 2.0, 2.1"
 git checkout SALT2v1_PowerDist2v0
 git pull origin SALT2v1_PowerDist2v0
 echo
 cd ../SALT_power_FRU
 git pull origin master
-echo
+echo "Not used by SALT, but by M0 Pro and W5500 shield"
 cd ../Ethernet2
 pwd
 git pull origin master
-echo
+echo "Used with SALT"
 cd ../Ethernet
 pwd
 git pull origin master
-echo 
+echo "We don't actually use this; keep it for reference"
 cd ../TeensyMAC
 pwd
 git pull origin master
-echo
+echo "We don't actually use this; keep it for reference"
 cd ../T3Mac
 pwd
 git pull origin master
-echo
+echo "Used with SALT"
 cd ../TeensyID
 pwd
 git pull origin master
@@ -156,4 +164,4 @@ echo Back to the script folder
 cd ../..
 pwd
 echo 
-echo DONE but check for errors
+echo "DONE but check for errors"
