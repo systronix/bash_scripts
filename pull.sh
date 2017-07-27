@@ -83,11 +83,14 @@ git pull origin master
 echo 
 cd ../Systronix_PCA9557
 pwd
-git pull --all
+git checkout master
+git pull origin master
+git checkout i2c_t3_by_ref
+git pull origin i2c_t3_by_ref
 echo 
 cd ../Systronix_PCA9548A
 pwd
-git pull --all
+git pull origin master
 echo 
 cd ../Systronix_TMP102
 pwd
@@ -107,6 +110,12 @@ git pull origin master
 echo
 cd ../Systronix_LCM300
 pwd
+git checkout master
+git pull origin master
+git checkout SALT2_PowerDist1
+git pull origin SALT2_PowerDist1
+git checkout SALT2v1_PowerDist2v0
+git pull origin SALT2v1_PowerDist2v0
 git pull --all
 echo
 cd ../SALT_power_FRU
