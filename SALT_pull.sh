@@ -40,9 +40,6 @@ echo
 echo
 echo Now SALT library master repos
 echo
-# these have branches; restore to the list when branches merged into master
-#../Systronix_LCM300 \
-#../Systronix_PCA9557 \
 
 for folder in \
 ../libraries/Ethernet \
@@ -63,6 +60,7 @@ for folder in \
 ../SALT_utilities \
 ../SdFat \
 ../SPI \
+../Systronix_LCM300 \
 ../Systronix_MB85RC256V \
 ../Systronix_NTP \
 ../Systronix_PCA9548A \
@@ -81,7 +79,6 @@ done
 #----------------------------< B R A N C H E S >--------------------------------------------------------------
 #
 # special cases when it is necessary to have multiple branches other than master
-# Be sure to remove the appropriate folder from the lists above
 # 
 
 echo "LCM300 lib with branches to support various SALT and Power Dist hardware..."
@@ -115,7 +112,7 @@ done
 
 #----------------------------< N O N - S A L T >--------------------------------------------------------------
 #
-# these are non-SALT repos.  Most are kept for reference but not used in SALT
+# these are non-SALT repos.  Most are kept for reference and are not used in SALT
 #
 
 if [[ $# -eq 0 ]]
