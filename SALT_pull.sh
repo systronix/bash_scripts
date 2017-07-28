@@ -45,6 +45,7 @@ for folder in \
 ../libraries/Ethernet \
 ../i2c_t3 `#I2C_T3 with systronix mods for exception handling` \
 ../ILI9341_t3/ \
+../ILI9341_fonts \
 ../NAP_pod_load_defs \
 ../SALT_drawer_locks \
 ../SALT_exceptions \
@@ -53,7 +54,6 @@ for folder in \
 ../SALT_heat_control \
 ../SALT_JX \
 ../SALT_logging \
-../SALT_menu \
 ../SALT_power_FRU \
 ../SALT_settings \
 ../SALT_UI \
@@ -95,10 +95,6 @@ do
 	if git pull origin $branch; then echo ""; else pwd; exit 1; fi
 done
 
-echo
-echo
-echo "PCA9557 master does not support Wire1"
-
 if cd ../Systronix_PCA9557; then echo ""; else pwd; exit 1; fi
 
 for branch in \
@@ -108,6 +104,20 @@ do
 	if git checkout $branch; then echo ""; else pwd; exit 1; fi
 	if git pull origin $branch; then echo ""; else pwd; exit 1; fi
 done
+
+if cd ../SALT_menu; then echo ""; else pwd; exit; fi
+
+# leave with master branch checked out
+for branch in \
+usingclass \
+master
+do
+	if git checkout $branch; then echo ""; else pwd; exit 1; fi
+	if git pull origin $branch; then echo ""; else pwd; exit 1; fi
+done
+
+
+
 
 
 #----------------------------< N O N - S A L T >--------------------------------------------------------------
@@ -129,21 +139,15 @@ else
 fi
 
 
+# Ethernet2 Not used by SALT, but by M0 Pro and W5500 shield
 for folder in \
-../Ethernet2 \ `# Not used by SALT, but by M0 Pro and W5500 shield` \
-../ILI9341_fonts \
+../Ethernet2 \
 ../TeensyMAC \
-../T3Mac
+../T3Mac 
 do
 	if cd $folder; then echo ""; else pwd; exit; fi
 	if git pull origin master; then echo ""; else pwd; exit 1; fi
 done
-
-# what about this one?  It is commented out in pull.sh
-# echo
-# cd ../EmonLib
-# pwd
-# git pull origin master
 
 echo
 echo
