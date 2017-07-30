@@ -23,6 +23,7 @@ echo
 
 for folder in ../Arduino/SALT_CodeUpdates/ \
 ../SALT_reptile/ \
+../SALT_mfg_test \
 ../NAP-SALT2-TEST \
 ../W5500_Test					# no line-continuation character for last folder
 do
@@ -40,12 +41,11 @@ echo
 echo
 echo Now SALT library master repos
 echo
-
+#I2C_T3 with systronix mods for exception handling
 for folder in \
 ../libraries/Ethernet \
-../i2c_t3 `#I2C_T3 with systronix mods for exception handling` \
+../i2c_t3 \
 ../ILI9341_t3/ \
-../ILI9341_fonts \
 ../NAP_pod_load_defs \
 ../SALT_drawer_locks \
 ../SALT_exceptions \
@@ -54,6 +54,7 @@ for folder in \
 ../SALT_heat_control \
 ../SALT_JX \
 ../SALT_logging \
+../SALT_menu \
 ../SALT_power_FRU \
 ../SALT_settings \
 ../SALT_UI \
@@ -81,8 +82,8 @@ done
 # special cases when it is necessary to have multiple branches other than master
 # 
 
-echo "LCM300 lib with branches to support various SALT and Power Dist hardware..."
-echo "... which have different I/O and pin mappings"
+#echo "LCM300 lib with branches to support various SALT and Power Dist hardware..."
+#echo "... which have different I/O and pin mappings"
 
 if cd ../Systronix_LCM300; then echo ""; else pwd; exit; fi
 
@@ -105,16 +106,16 @@ do
 	if git pull origin $branch; then echo ""; else pwd; exit 1; fi
 done
 
-if cd ../SALT_menu; then echo ""; else pwd; exit; fi
+#if cd ../SALT_menu; then echo ""; else pwd; exit; fi
 
 # leave with master branch checked out
-for branch in \
-usingclass \
-master
-do
-	if git checkout $branch; then echo ""; else pwd; exit 1; fi
-	if git pull origin $branch; then echo ""; else pwd; exit 1; fi
-done
+#for branch in \
+#usingclass \
+#master
+#do
+#	if git checkout $branch; then echo ""; else pwd; exit 1; fi
+#	if git pull origin $branch; then echo ""; else pwd; exit 1; fi
+#done
 
 
 
@@ -142,6 +143,7 @@ fi
 # Ethernet2 Not used by SALT, but by M0 Pro and W5500 shield
 for folder in \
 ../Ethernet2 \
+../ILI9341_fonts \
 ../TeensyMAC \
 ../T3Mac 
 do
