@@ -61,8 +61,12 @@ for folder in \
 ../SALT_utilities \
 ../SdFat \
 ../SPI \
+../Systronix_HDC1080 \
+../Systronix_ili9341_helper \
 ../Systronix_LCM300 \
+../Systronix_M24C32 \
 ../Systronix_MB85RC256V \
+../Systronix_MS8607 \
 ../Systronix_NTP \
 ../Systronix_PCA9548A \
 ../Systronix_PCA9557 \
