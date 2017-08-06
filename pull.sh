@@ -6,14 +6,19 @@ cd ../Arduino/SALT_CodeUpdates/
 git pull origin master
 echo 
 cd ../SALT_reptile/
+git checkout master
 git pull origin master
 echo 
 cd ../NAP-SALT2-TEST
 git pull origin master
 echo 
 cd ../W5500_Test
+git checkout master
 git pull origin master
-echo 
+echo "leave current working with_ethernet2 checked out"
+git checkout with_ethernet2
+git pull origin with_ethernet2
+echo
 echo Now library repos
 cd ../libraries
 pwd
@@ -99,6 +104,18 @@ cd ../Systronix_TMP102
 pwd
 git pull origin master
 echo 
+cd ../Systronix_HDC1080
+git pull origin master
+echo
+cd ../Systronix_ili9341_helper
+git pull origin master
+echo
+cd ../Systronix_M24C32
+git pull origin master
+echo
+cd ../Systronix_MS8607
+git pull origin master
+echo
 cd ../Systronix_TMP275
 pwd
 git pull origin master
