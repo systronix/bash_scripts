@@ -89,6 +89,10 @@ cd ../SALT_JX
 pwd
 git pull origin master
 echo 
+cd ../SALT_ethernet
+pwd
+git pull origin master
+echo
 cd ../Systronix_PCA9557
 pwd
 git checkout master
@@ -111,9 +115,11 @@ cd ../Systronix_ili9341_helper
 git pull origin master
 echo
 cd ../Systronix_M24C32
+pwd
 git pull origin master
 echo
 cd ../Systronix_MS8607
+pwd
 git pull origin master
 echo
 cd ../Systronix_TMP275
