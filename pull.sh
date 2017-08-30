@@ -1,6 +1,6 @@
 #!/bin/bash
 echo Try to do various git pulls
-echo First: repos which are not libraries
+echo >>>> First: repos which are not libraries
 echo 
 cd ../Arduino/SALT_CodeUpdates/
 git pull origin master
@@ -19,7 +19,11 @@ echo "leave current working with_ethernet2 checked out"
 git checkout with_ethernet2
 git pull origin with_ethernet2
 echo
-echo Now library repos
+cd ../SALT_mfg_test
+git checkout master
+git pull origin master
+echo
+echo >>>> Now library repos
 cd ../libraries
 pwd
 cd XPT2046_Touchscreen
