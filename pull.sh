@@ -1,6 +1,6 @@
 #!/bin/bash
 echo Try to do various git pulls
-echo >>>> First: repos which are not libraries
+echo ---- First: repos which are not libraries ----
 echo 
 cd ../Arduino/SALT_CodeUpdates/
 git pull origin master
@@ -23,7 +23,7 @@ cd ../SALT_mfg_test
 git checkout master
 git pull origin master
 echo
-echo >>>> Now library repos
+echo ---- Now library repos ----
 cd ../libraries
 pwd
 cd XPT2046_Touchscreen
