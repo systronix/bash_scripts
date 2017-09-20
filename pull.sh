@@ -1,4 +1,5 @@
 #!/bin/bash
+# leave with current working branch of each repo checked out, otherwise builds will be incorrect, or fail
 echo Try to do various git pulls
 echo ---- First: repos which are not libraries ----
 echo 
@@ -13,11 +14,11 @@ cd ../NAP-SALT2-TEST
 git pull origin master
 echo 
 cd ../W5500_Test
-git checkout master
-git pull origin master
-echo "leave current working with_ethernet2 checked out"
 git checkout with_ethernet2
 git pull origin with_ethernet2
+echo "leave current working branch master checked out"
+git checkout master
+git pull origin master
 echo
 cd ../SALT_mfg_test
 git checkout master
@@ -99,10 +100,10 @@ git pull origin master
 echo
 cd ../Systronix_PCA9557
 pwd
-git checkout master
-git pull origin master
 git checkout i2c_t3_by_ref
 git pull origin i2c_t3_by_ref
+git checkout master
+git pull origin master
 echo 
 cd ../Systronix_PCA9548A
 pwd
@@ -142,15 +143,15 @@ cd ../Systronix_LCM300
 echo "This is just the LCM300 lib with branches to support various SALT and Power Dist hardware..."
 echo "... which have different I/O and pin mappings"
 pwd
-echo "The master branch"
-git checkout master
-git pull origin master
 echo "For old SALT 2.0 which we are not currently using anymore."
 git checkout SALT2_PowerDist1
 git pull origin SALT2_PowerDist1
 echo "Latest hardware including SALT 2.2 and PD 2.2, as well as older SALT 2.1 with 2.2 ECOs and PowerDist 2.0, 2.1"
 git checkout SALT2v1_PowerDist2v0
 git pull origin SALT2v1_PowerDist2v0
+echo "The master branch, leave with master checked out"
+git checkout master
+git pull origin master
 echo
 cd ../SALT_power_FRU
 git pull origin master
