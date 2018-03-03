@@ -24,6 +24,10 @@ cd ../SALT_mfg_test
 git checkout master
 git pull origin master
 echo
+cd ../MUX_mfg_test
+git checkout master
+git pull origin master
+echo
 echo ---- Now library repos ----
 cd ../libraries
 pwd
