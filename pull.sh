@@ -163,6 +163,12 @@ echo "Used with SALT"
 cd ../Ethernet
 pwd
 git pull origin master
+echo " "
+echo "DS1307RTC"
+cd ../DS1307RTC
+pwd
+git pull origin master
+echo
 echo "We don't actually use this; keep it for reference"
 cd ../TeensyMAC
 pwd
