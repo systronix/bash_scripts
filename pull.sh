@@ -4,13 +4,16 @@ echo Try to do various git pulls
 echo ---- First: repos which are not libraries ----
 echo 
 cd ../Arduino/SALT_CodeUpdates/
+pwd
 git pull origin master
 echo 
 cd ../SALT_reptile/
+pwd
 git checkout master
 git pull origin master
 echo 
 cd ../NAP-SALT2-TEST
+pwd
 git pull origin master
 echo 
 cd ../W5500_Test
