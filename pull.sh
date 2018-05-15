@@ -31,10 +31,18 @@ cd ../MUX_mfg_test
 git checkout master
 git pull origin master
 echo
+#
 echo ---- Now library repos ----
 cd ../libraries
+#
+cd Systronix_i2c_common
 pwd
+echo "Systronix i2c common"
+pwd
+git pull origin master
+echo 
 cd XPT2046_Touchscreen
+pwd
 echo "XPT2046 touchscreen from PRJC"
 pwd
 git pull origin master
