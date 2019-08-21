@@ -1,0 +1,41 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/SALT_ethernet"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/Ethernet2"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/SALT_settings"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/SALT_exceptions"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/XPT2046_Touchscreen"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/ILI9341_t3"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/Systronix_MB85RC256V"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/TeensyID"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/Wire"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/i2c_t3"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/libraries/NAP_pod_load_defs"
+		},
+		{
+			"path": "/home/bruce/Documents/code/Arduino/W5500_Test/ILI9341_Test"
+		}
+	]
+}
