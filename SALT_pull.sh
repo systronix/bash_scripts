@@ -43,7 +43,7 @@ echo Now SALT library master repos
 echo
 #I2C_T3 with systronix mods for exception handling
 for folder in \
-../libraries/Ethernet \		#see readmes about all these EthernetX
+../libraries/Ethernet \
 ../i2c_t3 \
 ../ILI9341_t3/ \
 ../NAP_pod_load_defs \
