@@ -45,6 +45,7 @@ echo
 for folder in \
 ../libraries/Ethernet \
 ../i2c_t3 \
+../Systronix_i2c_common \
 ../ILI9341_t3/ \
 ../NAP_pod_load_defs \
 ../SALT_drawer_locks \
